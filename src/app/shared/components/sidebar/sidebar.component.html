@@ -1,0 +1,18 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-white">GifsApp</h3>
+  <hr class="text-white">
+
+  <!-- Solucion mia -->
+  <!-- <div *ngFor="let tag of searchHistory()" class="list-group list-reset"> -->
+  <!-- Solucion Fernando -->
+    <div class="list-group list-reset">
+    <button *ngFor="let tag of tags"
+    (click)="historyTag(tag)"
+    class="list-group-item list-group-item-action list-group-item-secondary">
+    <!-- Pipe para poner todo lo que se escriba en mayuscula -->
+    <!-- {{tag | uppercase}}</button> -->
+    <!-- Pipe para poner primera letra en mayuscula -->
+    {{tag | titlecase}}</button>
+
+  </div>
+</div>

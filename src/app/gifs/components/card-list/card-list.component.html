@@ -1,0 +1,43 @@
+<!-- En Bootstrap hemos dividido la pantalla en 12 columnas a lo ancho. -->
+<!-- Vamos a poner para que en pantallas medianas ocupe cada columna 3 de esas 12 divisiones, asi que se verian 4 gifs a lo ancho -->
+<!-- Vamos a poner para que en pantallas pequenas ocupe cada columna 6 de esas 12 divisiones, asi que se verian 2 gifs a lo ancho -->
+
+<div class="row">
+
+  <gifs-card
+    *ngFor="let gif of gifs"
+    [gif]="gif"
+    class="col-md-3 col-sm-6"
+  ></gifs-card>
+
+  <!-- Comento todo lo de abajo porque ya lo he puesto en gifts-card dentro de card.component -->
+
+  <!-- <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6">
+    <div class="card mb-2 text-center bg-dark"> -->
+
+      <!-- Valor de atributo de html equivale a una expresion de javascript se pone [] -->
+      <!-- Asi hacemos el binding del valor de una expresion -->
+      <!-- <img
+      [src]="gif.images.downsized_medium.url"
+      [alt]="gif.title"
+      class="card-image-top"
+      >
+
+      <div class="card-body text-white">
+        <p class="card-text">
+          {{gif.title}}
+        </p>
+      </div>
+
+    </div>
+
+  </div> -->
+</div>
+<!-- <ul>
+  <li>Primero</li>
+  <li>Segundo</li>
+  <li>Tercero</li>
+  <li>Cuarto</li>
+  <li>Quinto</li>
+</ul> -->
+

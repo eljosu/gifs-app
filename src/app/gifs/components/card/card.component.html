@@ -1,0 +1,23 @@
+<div class="card mb-2 text-center bg-dark">
+
+  <shared-lazy-image
+    [url]="gif.images.downsized_medium.url"
+    [alt]="gif.title || 'No name'"
+  ></shared-lazy-image>
+
+  <!-- Valor de atributo de html equivale a una expresion de javascript se pone [] -->
+  <!-- Asi hacemos el binding del valor de una expresion -->
+  <!-- <img
+  [src]="gif.images.downsized_medium.url"
+  [alt]="gif.title"
+  class="card-image-top"
+  > -->
+
+  <div class="card-body text-white">
+    <p class="card-text">
+      {{gif.title || 'No title'}}
+    </p>
+  </div>
+
+</div>
+
